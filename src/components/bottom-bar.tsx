@@ -6,7 +6,10 @@ import {
   personOutline,
   home,
 } from "ionicons/icons";
-
+import IcHome from "../assets/ic_home.svg";
+import IcLabBeaker from "../assets/ic_lab_beaker.svg";
+import IcGraph from "../assets/ic_graph.svg";
+import IcUser from "../assets/ic_user.svg";
 interface BottomTabBarProps {
   activeTab: "dashboard" | "lab" | "grafik" | "profil";
 }
@@ -19,12 +22,18 @@ const BottomTabBar: React.FC<BottomTabBarProps> = ({ activeTab }) => {
         href="/dashboard"
         selected={activeTab === "dashboard"}
       >
-        <IonIcon icon={activeTab === "dashboard" ? home : homeOutline} />
+        <IonIcon
+          icon={activeTab === "dashboard" ? IcHome : IcHome}
+          size="large"
+        />
         <IonLabel>Dashboard</IonLabel>
       </IonTabButton>
 
       <IonTabButton tab="lab" href="/lab" selected={activeTab === "lab"}>
-        <IonIcon icon={beakerOutline} />
+        <IonIcon
+          icon={activeTab === "lab" ? IcLabBeaker : IcLabBeaker}
+          size="large"
+        />
         <IonLabel>Lab</IonLabel>
       </IonTabButton>
 
@@ -33,7 +42,10 @@ const BottomTabBar: React.FC<BottomTabBarProps> = ({ activeTab }) => {
         href="/grafik"
         selected={activeTab === "grafik"}
       >
-        <IonIcon icon={barChartOutline} />
+        <IonIcon
+          icon={activeTab === "grafik" ? IcGraph : IcGraph}
+          size="large"
+        />
         <IonLabel>Grafik</IonLabel>
       </IonTabButton>
 
@@ -42,7 +54,7 @@ const BottomTabBar: React.FC<BottomTabBarProps> = ({ activeTab }) => {
         href="/profil"
         selected={activeTab === "profil"}
       >
-        <IonIcon icon={personOutline} />
+        <IonIcon icon={activeTab === "profil" ? IcUser : IcUser} size="large" />
         <IonLabel>Profil</IonLabel>
       </IonTabButton>
     </IonTabBar>

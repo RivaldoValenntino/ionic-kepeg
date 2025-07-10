@@ -11,9 +11,9 @@ export default defineConfig({
     VitePWA({
       registerType: "autoUpdate",
       manifest: {
-        name: "Aurora Absensi",
-        short_name: "Aurora Absensi",
-        description: "Aplikasi PWA Aurora Absensi",
+        name: "SIMPRO",
+        short_name: "Sistem Informasi Produksi",
+        description: "Aplikasi Sistem Informasi Produksi Kahuripan",
         theme_color: "#ffffff",
         start_url: "/",
         display: "standalone",

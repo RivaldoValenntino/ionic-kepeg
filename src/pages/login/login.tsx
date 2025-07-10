@@ -72,7 +72,7 @@ const LoginPage: React.FC = () => {
         </IonToolbar>
       </IonHeader>
 
-      <IonContent fullscreen className="ion-padding">
+      <IonContent fullscreen>
         <IonLoading isOpen={isLoggedIn} message="Logging in..." />
 
         <div className="login-container ion-text-center">

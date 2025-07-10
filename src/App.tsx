@@ -24,6 +24,9 @@ import ProtectedRoute from "./routes/ProtectedRoute";
 import PublicRoute from "./routes/PublicRoute";
 import { useAuth } from "./store/auth-store"; // 👈 custom selector
 import AuthLayout from "./layouts/auth-layout";
+import DashboardMeterGrid from "./pages/form/meter";
+import StandMeter from "./pages/form/stand-meter";
+import MeterPemdaForm from "./pages/form/input-meter";
 
 setupIonicReact();
 
@@ -41,6 +44,30 @@ const App: React.FC = () => {
             render={() => (
               <AuthLayout>
                 <DashboardPage />
+              </AuthLayout>
+            )}
+          />
+          <Route
+            path="/form-meter"
+            render={() => (
+              <AuthLayout>
+                <DashboardMeterGrid />
+              </AuthLayout>
+            )}
+          />
+          <Route
+            path="/form-stand-meter"
+            render={() => (
+              <AuthLayout>
+                <StandMeter />
+              </AuthLayout>
+            )}
+          />
+          <Route
+            path="/form-input-meter"
+            render={() => (
+              <AuthLayout>
+                <MeterPemdaForm />
               </AuthLayout>
             )}
           />

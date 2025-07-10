@@ -19,6 +19,7 @@ export default {
         orangeCust: "#F87931",
         blackCust: "#222222",
         secondary: "#1F50F5",
+        greenCust: "#9DD33E",
       },
     },
   },
