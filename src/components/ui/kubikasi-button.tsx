@@ -10,7 +10,6 @@ interface KubikasiButtonProps {
 
 const KubikasiButton: React.FC<KubikasiButtonProps> = ({
   onFilterChange,
-  activeFilter,
   btnDoneColor,
   btnUndoneColor,
   className,

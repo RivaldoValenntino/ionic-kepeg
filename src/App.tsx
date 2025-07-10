@@ -1,4 +1,4 @@
-import { Redirect, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import { IonApp, IonRouterOutlet, setupIonicReact } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
 
@@ -20,9 +20,6 @@ import IndexPage from "./pages";
 import LoginPage from "./pages/login/login";
 import DashboardPage from "./pages/dashboard/dashboard";
 
-import ProtectedRoute from "./routes/ProtectedRoute";
-import PublicRoute from "./routes/PublicRoute";
-import { useAuth } from "./store/auth-store"; // 👈 custom selector
 import AuthLayout from "./layouts/auth-layout";
 import DashboardMeterGrid from "./pages/form/meter";
 import StandMeter from "./pages/form/stand-meter";
@@ -31,8 +28,6 @@ import MeterPemdaForm from "./pages/form/input-meter";
 setupIonicReact();
 
 const App: React.FC = () => {
-  const { isAuthenticated } = useAuth();
-
   return (
     <IonApp>
       <IonReactRouter>

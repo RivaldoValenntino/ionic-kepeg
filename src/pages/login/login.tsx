@@ -21,7 +21,7 @@ import "./login.css";
 import { useEffect, useRef, useState } from "react";
 import api from "../../libs/api";
 import { LoginResponse } from "../../types/responses/login";
-import { useAuth, useAuthStore } from "../../store/auth-store";
+import { useAuthStore } from "../../store/auth-store";
 
 const LoginPage: React.FC = () => {
   const usernameRef = useRef<HTMLIonInputElement>(null);
@@ -57,7 +57,7 @@ const LoginPage: React.FC = () => {
     }
   };
   useEffect(() => {
-    const timer = setTimeout(() => {
+    setTimeout(() => {
       usernameRef.current?.setFocus();
     }, 100);
   }, []);

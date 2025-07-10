@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { IonAlert, IonIcon, IonImg } from "@ionic/react";
-import AppIcon from "../../assets/logo-removebg-preview.png";
+import { IonAlert } from "@ionic/react";
 
 interface BeforeInstallPromptEvent extends Event {
   prompt: () => Promise<void>;

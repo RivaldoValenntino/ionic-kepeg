@@ -1,11 +1,4 @@
 import { IonTabBar, IonTabButton, IonIcon, IonLabel } from "@ionic/react";
-import {
-  homeOutline,
-  beakerOutline,
-  barChartOutline,
-  personOutline,
-  home,
-} from "ionicons/icons";
 import IcHome from "../assets/ic_home.svg";
 import IcLabBeaker from "../assets/ic_lab_beaker.svg";
 import IcGraph from "../assets/ic_graph.svg";

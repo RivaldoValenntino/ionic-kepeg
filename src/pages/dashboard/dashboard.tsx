@@ -1,28 +1,21 @@
-import { IonPage, IonContent, IonLoading, useIonRouter } from "@ionic/react";
-import { useState } from "react";
-import { useAuthStore } from "../../store/auth-store";
-import BottomTabBar from "../../components/bottom-bar";
 import MeterProduksiCard from "../../components/MeterProduksi/meter-produksi-card";
-import ShiftInfo from "../../components/shift-info";
-import Profile from "../../components/ui/profile";
-import Avatar from "../../assets/ic_akun_avatar.svg";
 import ShiftPicker from "../../components/shift-picker";
 const DashboardPage: React.FC = () => {
-  const auth = useAuthStore();
-  const router = useIonRouter();
-  const [isLoggingOut, setIsLoggingOut] = useState(false);
+  // const auth = useAuthStore();
+  // const router = useIonRouter();
+  // const [isLoggingOut, setIsLoggingOut] = useState(false);
 
-  const handleLogout = async () => {
-    setIsLoggingOut(true);
-    await new Promise((resolve) => setTimeout(resolve, 300));
-    auth.logout();
-    router.push("/login");
-    setIsLoggingOut(false);
-  };
+  // const handleLogout = async () => {
+  //   setIsLoggingOut(true);
+  //   await new Promise((resolve) => setTimeout(resolve, 300));
+  //   auth.logout();
+  //   router.push("/login");
+  //   setIsLoggingOut(false);
+  // };
 
   return (
     <>
-      <IonLoading isOpen={isLoggingOut} message="Logging out..." />
+      {/* <IonLoading isOpen={isLoggingOut} message="Logging out..." /> */}
 
       <MeterProduksiCard
         title="Meter Produksi"

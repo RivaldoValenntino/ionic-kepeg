@@ -1,5 +1,4 @@
 import { useState } from "react";
-import StandKubikasi from "../../components/stand-kubikasi";
 import MeterCard from "../../components/meter-card";
 import GambarMeter from "../../assets/images/contoh_meter.png";
 import TimeInfo from "../../components/time-info";
@@ -7,7 +6,7 @@ import KubikasiButton from "../../components/ui/kubikasi-button";
 import Kubikasi from "../../components/ui/kubikasi";
 const StandMeter = () => {
   const [filter, setFilter] = useState<"sudah" | "belum">("belum");
-
+  console.log(filter);
   const meters = [
     {
       title: "METER PEMDA",

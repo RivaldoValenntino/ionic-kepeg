@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { IonPage, IonContent } from "@ionic/react";
 
 const ShiftPicker: React.FC = () => {
   const [selectedTime, setSelectedTime] = useState<string | null>("12:00");

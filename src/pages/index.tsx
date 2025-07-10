@@ -1,16 +1,8 @@
-import {
-  IonPage,
-  IonContent,
-  IonButton,
-  IonText,
-  IonImg,
-  useIonRouter,
-} from "@ionic/react";
+import { IonPage, IonContent, IonButton, IonText, IonImg } from "@ionic/react";
 import IcSplashScreen from "../assets/ic_splash_screen.svg";
 import IcAppLogo from "../../assets/logo-removebg-preview.png";
 import "./index.css";
 const IndexPage: React.FC = () => {
-  const router = useIonRouter();
   return (
     <IonPage>
       <IonContent fullscreen>

@@ -1,4 +1,4 @@
-import { IonPage, IonContent, IonText, IonIcon } from "@ionic/react";
+import { IonText } from "@ionic/react";
 import IcWm from "../../assets/ic_wm.svg";
 
 import TimeInfo from "../../components/time-info";

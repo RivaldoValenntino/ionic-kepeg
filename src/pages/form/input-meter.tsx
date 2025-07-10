@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { IonPage, IonContent, IonButton } from "@ionic/react";
+import { IonButton } from "@ionic/react";
 import { Camera, CameraResultType, CameraSource } from "@capacitor/camera";
-import NextInputInfo from "../../components/MeterProduksi/next-input-info";
 import TimeInfo from "../../components/time-info";
 import Kubikasi from "../../components/ui/kubikasi";
 
