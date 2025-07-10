@@ -7,7 +7,7 @@ import {
   useIonRouter,
 } from "@ionic/react";
 import IcSplashScreen from "../assets/ic_splash_screen.svg";
-import IcAppLogo from "../assets/logo.svg";
+import IcAppLogo from "../../assets/logo-removebg-preview.png";
 import "./index.css";
 const IndexPage: React.FC = () => {
   const router = useIonRouter();
@@ -23,7 +23,7 @@ const IndexPage: React.FC = () => {
 
           <IonText color="dark">
             <h2 style={{ fontWeight: "bold", fontSize: "20px" }}>
-              Selamat Datang di aplikasi Aurora Absensi
+              Selamat Datang di aplikasi Sistem Informasi Produksi
             </h2>
           </IonText>
 
@@ -34,7 +34,7 @@ const IndexPage: React.FC = () => {
           />
 
           <IonText color="medium">
-            <p>Silahkan masuk untuk menggunakan aplikasi absen.</p>
+            <p>Silahkan masuk untuk menggunakan aplikasi SIMPRO</p>
           </IonText>
 
           <IonButton

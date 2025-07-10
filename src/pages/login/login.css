@@ -59,13 +59,9 @@
 }
 
 .login-button {
-  margin-top: 1rem;
+  margin-top: 0.3rem;
   font-size: 1rem;
   width: 100% !important;
   text-transform: none;
   height: 3rem;
-}
-
-.login-button:hover {
-  --background: rgba(185, 1, 1, 0.8);
 }

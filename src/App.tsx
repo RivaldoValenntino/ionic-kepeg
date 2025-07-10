@@ -23,6 +23,7 @@ import DashboardPage from "./pages/dashboard/dashboard";
 import ProtectedRoute from "./routes/ProtectedRoute";
 import PublicRoute from "./routes/PublicRoute";
 import { useAuth } from "./store/auth-store"; // 👈 custom selector
+import AuthLayout from "./layouts/auth-layout";
 
 setupIonicReact();
 
@@ -34,8 +35,15 @@ const App: React.FC = () => {
       <IonReactRouter>
         <IonRouterOutlet>
           <Route exact path="/" component={IndexPage} />
-          <PublicRoute exact path="/login" component={LoginPage} />
-          <ProtectedRoute exact path="/dashboard" component={DashboardPage} />
+          <Route exact path="/login" component={LoginPage} />
+          <Route
+            path="/dashboard"
+            render={() => (
+              <AuthLayout>
+                <DashboardPage />
+              </AuthLayout>
+            )}
+          />
         </IonRouterOutlet>
       </IonReactRouter>
     </IonApp>

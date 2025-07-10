@@ -16,7 +16,7 @@ import {
   useIonRouter,
   IonLoading,
 } from "@ionic/react";
-import IlustrasiLogin from "../../assets/ic_masuk_akun.svg";
+import IlustrasiLogin from "../../assets/login_ic.svg";
 import "./login.css";
 import { useEffect, useRef, useState } from "react";
 import api from "../../libs/api";
@@ -60,8 +60,6 @@ const LoginPage: React.FC = () => {
     const timer = setTimeout(() => {
       usernameRef.current?.setFocus();
     }, 100);
-
-    return () => clearTimeout(timer);
   }, []);
   return (
     <IonPage>
