@@ -23,6 +23,13 @@ body {
     rgba(48, 96, 255, 1) 20%,
     rgba(247, 246, 254, 1) 40%
   );
+  overflow: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+#index-body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
 
 /* rgba(247, 246, 254, 1) 40% */
