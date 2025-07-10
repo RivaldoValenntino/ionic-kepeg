@@ -120,7 +120,6 @@ const LoginPage: React.FC = () => {
               fill="outline"
               label="Username"
               ref={usernameRef}
-              required={true}
               labelPlacement="floating"
               className="input-field"
             />
